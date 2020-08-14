@@ -1,0 +1,12 @@
+{
+  "name": "@planner/planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "type": "module",
+  "author": "Rahul Dasgupta <themissingbracket@gmail.com>",
+  "license": "MIT"
+}
