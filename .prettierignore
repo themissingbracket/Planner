@@ -1,0 +1,13 @@
+
+# platofrm specific
+android
+
+# configuration files
+package.json
+package-lock.json
+tsconfig.json
+lerna.json
+
+# build output
+build
+dist

@@ -8,5 +8,14 @@
   },
   "type": "module",
   "author": "Rahul Dasgupta <themissingbracket@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-react": "^7.20.6",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  }
 }
