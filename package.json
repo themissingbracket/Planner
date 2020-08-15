@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "lerna run test",
+    "bootstrap": "lerna bootstrap"
   },
   "type": "module",
   "author": "Rahul Dasgupta <themissingbracket@gmail.com>",

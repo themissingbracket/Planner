@@ -1,0 +1,9 @@
+{
+  // Removes IDE syntax errors when  writing PostCSS
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "prettier.disableLanguages": ["postcss"],
+  // Formats files automatically when you save them
+  "editor.formatOnSave": true
+}
