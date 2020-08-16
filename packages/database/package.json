@@ -10,7 +10,8 @@
 		"access": "public"
 	},
 	"scripts": {
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "echo \"Error: run tests from root\" && exit 1",
+		"migrate": "knex migrate:up"
 	},
 	"devDependencies": {
 		"jest": "^26.4.0",
