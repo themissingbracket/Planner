@@ -1,0 +1,10 @@
+version: "2"
+
+options:
+  verbose: true
+
+syncs:
+  planner-sync:
+    notify_terminal: true
+    src: "."
+    sync_excludes: ['.git', 'node_modules', 'Dockerfile', 'docker-sync.yml', 'docker-compose.yml', '.docker-sync']

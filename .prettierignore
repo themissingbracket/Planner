@@ -11,3 +11,5 @@ lerna.json
 # build output
 build
 dist
+docker*.yml
+Dockerfile

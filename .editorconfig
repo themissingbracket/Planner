@@ -34,3 +34,6 @@ indent_style = tab
 [*.md]
 trim_trailing_whitespace = false
 
+# All YML files , tabs breaks it for some reason
+[*.yml]
+indent_style = space

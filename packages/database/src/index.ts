@@ -2,21 +2,16 @@ import knex from 'knex';
 import { config } from 'dotenv';
 
 // Load env from root
-config({
-	path: '../../../.env'
-});
-dotenv.config({
-	path: '../../..'
-});
-console.log(process.env.POSTGRES_DB, 'CONFIG');
-const config = {
+config();
+
+const dbconfig = {
 	client: 'pg',
 	debug: true,
 	connection: {
-		database: 'planner', //process.env.POSTGRES_DB,
-		user: 'admin', //process.env.POSTGRES_USER,
-		password: 'eTYrOSidITEM', //process.env.POSTGRES_PASSWORD,
-		port: 5333
+		database: process.env.POSTGRES_DB,
+		user: process.env.POSTGRES_USER,
+		password: process.env.POSTGRES_PASSWORD,
+		host: process.env.POSTGRES_HOST
 	},
 	migrations: {
 		directory: './__database__/migrations'
@@ -36,7 +31,7 @@ interface Users {
 	deleted_date: Date;
 }
 
-const k = knex(config);
+const k = knex(dbconfig);
 
 const usersTable = k<Users>('users');
 
